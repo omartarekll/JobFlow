@@ -21,6 +21,7 @@ export async function fetchJobs() {
   isLoading = true;
   loadingState.classList.remove("hidden");
   const searchTerm = searchInput.value.trim();
+  const query = searchTerm ? searchTerm : "developer";
   let filterParams = "";
   let locationParams = "";
 
@@ -33,11 +34,9 @@ export async function fetchJobs() {
       filterParams += `&${checkbox.id}=1`;
     }
   });
-
   try {
-    const res = await fetch(
-      `${CONFIG.PROXY}${CONFIG.BASE_URL}${pageNum}?app_id=${CONFIG.APP_ID}&app_key=${CONFIG.APP_KEY}&what=${searchTerm}${filterParams}${locationParams}`,
-    );
+    const targetUrl = `${CONFIG.BASE_URL}1?app_id=${CONFIG.APP_ID}&app_key=${CONFIG.APP_KEY}&what=${query}`;
+    const res = await fetch(targetUrl);
     const data = await res.json();
     const newJobs = data.results;
 

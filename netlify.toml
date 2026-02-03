@@ -1,0 +1,5 @@
+[[redirects]]
+  from = "/api/*"
+  to = "https://api.adzuna.com/v1/api/jobs/us/search/:splat"
+  status = 200
+  force = true
