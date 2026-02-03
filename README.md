@@ -2,7 +2,7 @@
 
 JobFlow is a modern, responsive job search application that aggregates job listings from the Adzuna API. It allows users to search, filter, and view job details in real-time with a clean, mobile-first user interface.
 
-🌐![JobFlow Demo](https://jobfllow.netlify.app/)
+🌐[JobFlow Demo](https://jobfllow.netlify.app/)
 
 ![App Screenshot](/assets/images/desktop.png)
 
