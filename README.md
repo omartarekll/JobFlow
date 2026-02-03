@@ -56,8 +56,8 @@ Since this project uses an API Key, you need to set up a configuration file manu
    const CONFIG = {
    APP_ID: "YOUR_ADZUNA_APP_ID",
    APP_KEY: "YOUR_ADZUNA_APP_KEY",
-   BASE_URL: "[https://api.adzuna.com/v1/api/jobs/us/search/](https://api.adzuna.com/v1/api/jobs/us/search/)",
-   PROXY: "[https://corsproxy.io/](https://corsproxy.io/)?"
+   BASE_URL: "https://api.adzuna.com/v1/api/jobs/us/search/",
+   PROXY: "https://corsproxy.io/?"
    };
    ```
 
